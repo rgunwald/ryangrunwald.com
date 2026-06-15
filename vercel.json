@@ -1,5 +1,7 @@
 {
-    "rewrites": [
-          { "source": "/points/:path*", "destination": "https://grooneys-wallet.vercel.app/:path*" }
-    ]
+      "rewrites": [
+              { "source": "/points", "destination": "https://grooneys-wallet.vercel.app/" },
+              { "source": "/points/:path*", "destination": "https://grooneys-wallet.vercel.app/:path*" },
+              { "source": "/assets/:path*", "destination": "https://grooneys-wallet.vercel.app/assets/:path*" }
+      ]
 }
