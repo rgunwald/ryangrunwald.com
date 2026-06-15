@@ -1,0 +1,5 @@
+{
+    "rewrites": [
+          { "source": "/points/:path*", "destination": "https://grooneys-wallet.vercel.app/:path*" }
+    ]
+}
