@@ -1,9 +1,7 @@
 {
-          "routes": [
-                      { "src": "/.well-known/(.*)", "dest": "/.well-known/$1" },
-                      { "src": "/points", "dest": "https://grooneys-wallet.vercel.app/" },
-                      { "src": "/points/(.*)", "dest": "https://grooneys-wallet.vercel.app/$1" },
-                      { "src": "/assets/(.*)", "dest": "https://grooneys-wallet.vercel.app/assets/$1" },
-                      { "src": "/(.*)", "dest": "/index.html" }
-          ]
+            "rewrites": [
+                          { "source": "/points", "destination": "https://grooneys-wallet.vercel.app/" },
+                          { "source": "/points/:path*", "destination": "https://grooneys-wallet.vercel.app/:path*" },
+                          { "source": "/assets/:path*", "destination": "https://grooneys-wallet.vercel.app/assets/:path*" }
+            ]
 }
